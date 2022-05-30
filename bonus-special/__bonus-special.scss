@@ -1,0 +1,11 @@
+.bonus-special {
+  width: 33.2rem;
+  margin-right: 2.1rem;
+}
+
+@media (max-width: 48em) {
+  .bonus-special {
+    margin-right: 0;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+.facts__text {
+  font-family: "Inter";
+  @include font(600, 2.2rem, 140%);
+}
+
+@media (max-width: 48em) {
+  .facts__text {
+    width: 45.8rem;
+    @include font(600, 2.8rem, 100%);
+    padding-right: 2rem;
+  }
+}

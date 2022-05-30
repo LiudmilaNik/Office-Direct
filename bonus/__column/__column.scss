@@ -1,0 +1,16 @@
+.bonus__column {
+  display: flex;
+}
+
+@media (max-width: 48em) {
+  .bonus__column {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    max-width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 0rem;
+    }
+  }
+}

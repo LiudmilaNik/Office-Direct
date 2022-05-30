@@ -1,0 +1,14 @@
+.footer__col2 {
+  display: flex;
+  width: 19.3rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media (max-width: 48em) {
+  .footer__col2 {
+    min-width: 28rem;
+    margin-bottom: 4rem;
+  }
+}

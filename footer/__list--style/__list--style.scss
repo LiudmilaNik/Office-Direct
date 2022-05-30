@@ -1,0 +1,18 @@
+.footer__list--style {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  @include font(500, 1.7rem, 140%);
+  color: #e7eaef;
+  padding-left: 1.6rem;
+  gap: 1rem;
+}
+
+@media (max-width: 48em) {
+  .footer__list--style {
+    @include font(500, 3rem, 140%);
+    padding-left: 0;
+    gap: 2rem;
+  }
+}

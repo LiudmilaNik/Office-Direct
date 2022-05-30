@@ -1,0 +1,20 @@
+.footer__wrapper {
+  @include maxWindth;
+  padding-top: 6.3rem;
+  padding-bottom: 6.5rem;
+
+  &:nth-child(2) {
+    margin-right: 8.2rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .footer__wrapper {
+    flex-direction: column;
+    padding-top: 8.2rem;
+    padding-bottom: 7.6rem;
+    &:nth-child(2) {
+      order: 1;
+    }
+  }
+}

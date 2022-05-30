@@ -1,0 +1,18 @@
+.facts__answer {
+  padding-top: 1.3rem;
+  padding-bottom: 1.1rem;
+  padding-right: 6.7rem;
+  padding-left: 1rem;
+  font-family: "Inter";
+  @include font(400, 1.9rem, 140%);
+  display: none;
+}
+
+@media (max-width: 48em) {
+  .facts__answer {
+    @include font(400, 2.6rem, 120%);
+    padding-top: 2.4rem;
+    padding-right: 0rem;
+    padding-left: 0.5rem;
+  }
+}

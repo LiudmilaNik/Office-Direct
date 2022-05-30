@@ -1,0 +1,12 @@
+.bonus-discount {
+  width: 29.4rem;
+  margin-right: 0.9rem;
+}
+
+@media (max-width: 48em) {
+  .bonus-discount {
+    margin-right: 0;
+    max-width: 90%;
+    padding-bottom: 4rem;
+  }
+}

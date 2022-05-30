@@ -1,0 +1,12 @@
+.facts {
+  margin-bottom: 11rem;
+  .title {
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .facts {
+    margin-bottom: 14rem;
+  }
+}

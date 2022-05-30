@@ -1,0 +1,12 @@
+.footer__copy {
+  display: flex;
+  flex-direction: column;
+  @include font(500, 1.4rem, 140%);
+  gap: 0.6rem;
+}
+
+@media (max-width: 48em) {
+  .footer__copy {
+    display: none;
+  }
+}

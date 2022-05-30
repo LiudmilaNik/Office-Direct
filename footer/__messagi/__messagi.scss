@@ -1,0 +1,11 @@
+.footer__messagi {
+  @include vercen;
+  margin-top: 1.7rem;
+  margin-bottom: 1.7rem;
+}
+
+@media (max-width: 48em) {
+  .footer__messagi {
+    margin-top: 2.7rem;
+  }
+}

@@ -1,0 +1,13 @@
+.facts__item--active {
+  background: #f5f6fa;
+  box-shadow: 0 2rem 5.2rem -0.8rem rgba(0, 0, 0, 0.15);
+  transition: 1s;
+}
+
+@media (max-width: 48em) {
+  .facts__item--active {
+    @include font(400, 2.6rem, 120%);
+    // z-index: 100;
+    padding-top: 2.6rem;
+  }
+}
