@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/swiper-bundle.js"></script>
+    <script src="js/aos.js"></script>
+    <!-- <script defer src="js/jquery-3.6.0.min.js"></script> -->
+    <script defer src="js/inputmask.min.js"></script>
+    <script defer src="js/just-validate.production.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <title>ОфисДирект</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__info">
+            <button type="button" class="header__burger">
+              <img loading="lazy" src="img/header/burger-mobile.svg" alt="" />
+            </button>
+            <button type="button" class="header__cross">
+              <img loading="lazy" src="img/header/cross.svg" alt="" />
+            </button>
+            <a href="#" class="header-logo header-logo__wrap">
+              <div class="header-logo__img">
+                <img loading="lazy" src="img/header/logo.png" alt="" />
+              </div>
+              <div class="header-logo__text header-logo__text--color">
+                Кресла Samurai
+              </div>
+            </a>
+            <div class="header__find">
+              <input
+                class="header__input header__input--color"
+                type="text"
+                placeholder="Название модели или артикул"
+              />
+            </div>
+            <div class="header-tel header-tel__wrap">
+              <div class="header-tel__img">
+                <img loading="lazy" src="img/header/phone.svg" alt="" />
+              </div>
+              <a
+                href="tel:+74952210675"
+                class="header-tel__text header-tel__text--color"
+                >+7 495 221-06-75</a
+              >
+            </div>
+            <button
+              type="button"
+              class="button button__header button__header--color button__modal"
+            >
+              Заказать звонок
+            </button>
+          </div>
+          <div class="header__menu">
+            <div class="header__navigation">
+              <button
+                class="menu header__catalog header__catalog--color header__catalog--size-m"
+              >
+                <img class="menu__img" src="img/header/burger.svg" alt="" />
+                <span class="menu__text">Каталог</span>
+              </button>
+              <nav class="header__nav">
+                <a href="#" class="header__link">О продукте</a>
+                <a href="#" class="header__link">Отзывы</a>
+                <a href="#" class="header__link">Доставка и оплата</a>
+                <a href="#" class="header__link">Контакты</a>
+              </nav>
+            </div>
+            <div class="header__shop">
+              <div class="header__region">
+                <div class="header__gps">
+                  <img loading="lazy" src="img/header/gps.svg" alt="" />
+                </div>
+
+                <div class="select">
+                  <div class="select__categories">
+                    <div class="select__header">
+                      <span class="select__title">Москва</span>
+                      <img
+                        loading="lazy"
+                        src="img/header/arrow-select-black.svg"
+                        alt=""
+                      />
+                    </div>
+                    <ul class="select__body">
+                      <li class="select__item">Новосибирск</li>
+                      <li class="select__item">Псков</li>
+                      <li class="select__item">Санкт_Петербург</li>
+                      <li class="select__item">Красноярск</li>
+                      <li class="select__item">Москва</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- <input class="header__country" type="text" list="country" />
+                <datalist id="country">
+                  <option value="Москва"></option>
+                  <option value="Новосибирск"></option>
+                  <option value="Псков"></option>
+                </datalist> -->
+              </div>
+              <div class="header-basket header-basket__wrap">
+                <div class="header-basket__img">
+                  <img loading="lazy" src="img/header/shopping.svg" alt="" />
+                </div>
+                <span class="header-basket__text">Моя корзина</span>
+                <div class="header-basket__count header-basket__count--size">
+                  +1
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__mobile header__mobile--style">
+          <ul class="header__list header__list--style">
+            <li>
+              <a class="header__item" href="#">О продукте</a>
+            </li>
+            <li>
+              <a class="header__item" href="#">Отзывы</a>
+            </li>
+            <li>
+              <a class="header__item" href="#">Доставка и оплата</a>
+            </li>
+            <li>
+              <a class="header__item" href="#">Контакты</a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="button header__button-mobile button--color"
+          >
+            Заказать звонок
+          </button>
+          <a
+            href="tel:+74952210675"
+            class="header-tel__text header-tel__text--color"
+            >+7 495 221-06-75</a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="slider swiper">
+        <div class="swiper-wrapper">
+          <div class="slider__slide swiper-slide">
+            <div class="container">
+              <div class="slider__wrap">
+                <div class="slider__title">
+                  <h1 class="slider__header" data-aos="fade-up">
+                    Кресла Samurai <strong>на выгодных условиях</strong> по всей
+                    стране
+                  </h1>
+                  <div class="slider__flag">
+                    <img
+                      loading="lazy"
+                      src="img/slider/russian-flag.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="slider__description">
+                  Здесь вам не придется покупать товар в слепую — проведите
+                  тест-драйв перед покупкой
+                </div>
+                <button
+                  type="button"
+                  class="button button__modal slider__button"
+                >
+                  Запись на тест-драйв
+                </button>
+                <button
+                  type="button"
+                  class="button button__modal slider__button-mobile"
+                >
+                  Tест-драйв
+                </button>
+              </div>
+            </div>
+            <div class="slider__back">
+              <img loading="lazy" src="img/slider/slide-1.jpg" alt="" />
+            </div>
+            <div class="slider__back-mobile">
+              <img loading="lazy" src="img/slider/slide-2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="slider__slide swiper-slide">
+            <div class="container">
+              <div class="slider__wrap">
+                <div class="slider__title">
+                  <h1 class="slider__header">
+                    Кресла Samurai <strong>на выгодных условиях</strong> по всей
+                    стране
+                  </h1>
+                  <div class="slider__flag">
+                    <img
+                      loading="lazy"
+                      src="img/slider/russian-flag.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="slider__description">
+                  Здесь вам не придется покупать товар в слепую — проведите
+                  тест-драйв перед покупкой
+                </div>
+                <button
+                  type="button"
+                  class="button testdrive__button testdrive__button--color button__modal"
+                >
+                  Запись на тест-драйв
+                </button>
+              </div>
+            </div>
+            <div class="slider__back">
+              <img loading="lazy" src="img/slider/slide-1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="slider__slide swiper-slide">
+            <div class="container">
+              <div class="slider__wrap">
+                <div class="slider__title">
+                  <h1 class="slider__header">
+                    Кресла Samurai <strong>на выгодных условиях</strong> по всей
+                    стране
+                  </h1>
+                  <div class="slider__flag">
+                    <img
+                      loading="lazy"
+                      src="img/slider/russian-flag.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="slider__description">
+                  Здесь вам не придется покупать товар в слепую — проведите
+                  тест-драйв перед покупкой
+                </div>
+                <button
+                  type="button"
+                  class="button testdrive__button testdrive__button--color button__modal"
+                >
+                  Запись на тест-драйв
+                </button>
+              </div>
+            </div>
+            <div class="slider__back">
+              <img loading="lazy" src="img/slider/slide-1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="slider__slide swiper-slide">
+            <div class="container">
+              <div class="slider__wrap">
+                <div class="slider__title">
+                  <h1 class="slider__header">
+                    Кресла Samurai <strong>на выгодных условиях</strong> по всей
+                    стране
+                  </h1>
+                  <div class="slider__flag">
+                    <img
+                      loading="lazy"
+                      src="img/slider/russian-flag.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="slider__description">
+                  Здесь вам не придется покупать товар в слепую — проведите
+                  тест-драйв перед покупкой
+                </div>
+                <button
+                  type="button"
+                  class="button testdrive__button testdrive__button--color button__modal"
+                >
+                  Запись на тест-драйв
+                </button>
+              </div>
+            </div>
+            <div class="slider__back">
+              <img loading="lazy" src="img/slider/slide-1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="slider__slide swiper-slide">
+            <div class="container">
+              <div class="slider__wrap">
+                <div class="slider__title">
+                  <h1 class="slider__header">
+                    Кресла Samurai <strong>на выгодных условиях</strong> по всей
+                    стране
+                  </h1>
+                  <div class="slider__flag">
+                    <img
+                      loading="lazy"
+                      src="img/slider/russian-flag.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="slider__description">
+                  Здесь вам не придется покупать товар в слепую — проведите
+                  тест-драйв перед покупкой
+                </div>
+                <button
+                  type="button"
+                  class="button testdrive__button testdrive__button--color button__modal"
+                >
+                  Запись на тест-драйв
+                </button>
+              </div>
+            </div>
+            <div class="slider__back">
+              <img loading="lazy" src="img/slider/slide-1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="slider__navigation">
+          <div class="slider__arrow slider__arrow-left slider__arrow--style">
+            <img loading="lazy" src="img/slider/arrow-left.svg" alt="" />
+          </div>
+          <div class="slider__arrow slider__arrow-right slider__arrow--style">
+            <img loading="lazy" src="img/slider/arrow-right.svg" alt="" />
+          </div>
+        </div>
+        <div class="slider__pagination"></div>
+      </section>
+      <div class="bonus">
+        <div class="container">
+          <div class="bonus__wrap">
+            <div class="bonus__column">
+              <div class="item-bonus bonus-delivery" data-aos="zoom-in">
+                <div class="item-bonus__img">
+                  <img loading="lazy" src="img/bonus/bonus1.svg" alt="" />
+                </div>
+                <div class="bonus__text">
+                  <div class="item-bonus__text">
+                    <span class="item-bonus__span">Бесплатная доставка </span>по
+                    Москве и Санкт-Петербургу — от 3 шт.
+                  </div>
+                  <a href="#" class="item-bonus__subtext">Как получить? </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="bonus__column">
+              <div class="item-bonus bonus-discount" data-aos="zoom-in">
+                <div class="item-bonus__img">
+                  <img loading="lazy" src="img/bonus/bonus2.svg" alt="" />
+                </div>
+                <div class="bonus__text">
+                  <div class="item-bonus__text">
+                    <span class="item-bonus__span">Индивидуальные скидки </span
+                    >при заказе от 3 шт.
+                  </div>
+                  <a href="#" class="item-bonus__subtext">Смотреть условия</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="bonus__column">
+              <div class="item-bonus bonus-special" data-aos="zoom-in">
+                <div class="item-bonus__img">
+                  <img loading="lazy" src="img/bonus/bonus3.svg" alt="" />
+                </div>
+                <div class="bonus__text">
+                  <div class="item-bonus__text">
+                    Для юридических лиц действуют
+                    <span class="item-bonus__span">особые условия</span>
+                  </div>
+                  <a href="#" class="item-bonus__subtext">Узнать подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="catalog">
+        <div class="container">
+          <h2 class="title title__document">Каталог кресел</h2>
+          <div class="catalog__wrap">
+            <a href="#" class="cart cart__wrapper cart--color">
+              <div class="cart__wrap cart__wrap--color">
+                <div class="cart__img">
+                  <img loading="lazy" src="img/cart/cart.png" alt="" />
+                </div>
+                <div class="cart__title cart__title--color">
+                  Samurai KL-1.04 Темно-коричневый
+                </div>
+                <div class="cart__coin-new">23 000 ₽</div>
+                <div class="cart__coin-old">
+                  <span>27 000 ₽</span
+                  ><img
+                    class="cart__coin-img"
+                    src="img/cart/line-summ.svg"
+                    alt=""
+                  />
+                </div>
+                <button type="submit" class="button__cart button__cart--color">
+                  Добавить в корзину
+                </button>
+              </div>
+            </a>
+            <a href="#" class="cart cart__wrapper cart--color">
+              <div class="cart__wrap cart__wrap--color">
+                <div class="cart__img">
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
+                </div>
+                <div class="cart__title cart__title--color">
+                  Samurai KL-1.04 Темно-коричневый
+                </div>
+                <div class="cart__coin-new">23 000 ₽</div>
+                <div class="cart__coin-old">
+                  <span>27 000 ₽</span
+                  ><img
+                    class="cart__coin-img"
+                    src="img/cart/line-summ.svg"
+                    alt=""
+                  />
+                </div>
+                <button type="submit" class="button__cart button__cart--color">
+                  Добавить в корзину
+                </button>
+              </div>
+            </a>
+            <a href="#" class="cart cart__wrapper cart--color">
+              <div class="cart__wrap cart__wrap--color">
+                <div class="cart__img">
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
+                </div>
+                <div class="cart__title cart__title--color">
+                  Samurai KL-1.04 Темно-коричневый
+                </div>
+                <div class="cart__coin-new">23 000 ₽</div>
+                <div class="cart__coin-old">
+                  <span>27 000 ₽</span
+                  ><img
+                    class="cart__coin-img"
+                    src="img/cart/line-summ.svg"
+                    alt=""
+                  />
+                </div>
+                <button type="submit" class="button__cart button__cart--color">
+                  Добавить в корзину
+                </button>
+              </div>
+            </a>
+            <a href="#" class="cart cart__wrapper cart--color">
+              <div class="cart__wrap cart__wrap--color">
+                <div class="cart__img">
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
+                </div>
+                <div class="cart__title cart__title--color">
+                  Samurai KL-1.04 Темно-коричневый
+                </div>
+                <div class="cart__coin-new">23 000 ₽</div>
+                <div class="cart__coin-old">
+                  <span>27 000 ₽</span
+                  ><img
+                    class="cart__coin-img"
+                    src="img/cart/line-summ.svg"
+                    alt=""
+                  />
+                </div>
+                <button type="submit" class="button__cart button__cart--color">
+                  Добавить в корзину
+                </button>
+              </div>
+            </a>
+            <a href="#" class="cart cart__wrapper cart--color">
+              <div class="cart__wrap cart__wrap--color">
+                <div class="cart__img">
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
+                </div>
+                <div class="cart__title cart__title--color">
+                  Samurai KL-1.04 Темно-коричневый
+                </div>
+                <div class="cart__coin-new">23 000 ₽</div>
+                <div class="cart__coin-old">
+                  <span>27 000 ₽</span
+                  ><img
+                    class="cart__coin-img"
+                    src="img/cart/line-summ.svg"
+                    alt=""
+                  />
+                </div>
+                <button type="submit" class="button__cart button__cart--color">
+                  Добавить в корзину
+                </button>
+              </div>
+            </a>
+            <a href="#" class="cart cart__wrapper cart--color">
+              <div class="cart__wrap cart__wrap--color">
+                <div class="cart__img">
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
+                </div>
+                <div class="cart__title cart__title--color">
+                  Samurai KL-1.04 Темно-коричневый
+                </div>
+                <div class="cart__coin-new">23 000 ₽</div>
+                <div class="cart__coin-old">
+                  <span>27 000 ₽</span
+                  ><img
+                    class="cart__coin-img"
+                    src="img/cart/line-summ.svg"
+                    alt=""
+                  />
+                </div>
+                <button type="submit" class="button__cart button__cart--color">
+                  Добавить в корзину
+                </button>
+              </div>
+            </a>
+            <a href="#" class="cart cart__wrapper cart--color">
+              <div class="cart__wrap cart__wrap--color">
+                <div class="cart__img">
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
+                </div>
+                <div class="cart__title cart__title--color">
+                  Samurai KL-1.04 Темно-коричневый
+                </div>
+                <div class="cart__coin-new">23 000 ₽</div>
+                <div class="cart__coin-old">
+                  <span>27 000 ₽</span
+                  ><img
+                    class="cart__coin-img"
+                    src="img/cart/line-summ.svg"
+                    alt=""
+                  />
+                </div>
+                <button type="submit" class="button__cart button__cart--color">
+                  Добавить в корзину
+                </button>
+              </div>
+            </a>
+            <a href="#" class="cart cart__wrapper cart--color">
+              <div class="cart__wrap cart__wrap--color">
+                <div class="cart__img">
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
+                </div>
+                <div class="cart__title cart__title--color">
+                  Samurai KL-1.04 Темно-коричневый
+                </div>
+                <div class="cart__coin-new">23 000 ₽</div>
+                <div class="cart__coin-old">
+                  <span>27 000 ₽</span
+                  ><img
+                    class="cart__coin-img"
+                    src="img/cart/line-summ.svg"
+                    alt=""
+                  />
+                </div>
+                <button type="submit" class="button__cart button__cart--color">
+                  Добавить в корзину
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="catalog__more catalog__more--style">
+            <button type="button" class="button__more">Показать все</button>
+          </div>
+        </div>
+      </section>
+      <section class="testdrive">
+        <div class="testdrive__testdpive-wrap">
+          <div class="container">
+            <div class="testdrive__wrapper">
+              <div class="testdrive__text">
+                <div class="testdrive__header">
+                  Посетите салон и проведите тест-драйв лично
+                </div>
+                <div class="testdrive__text-content">
+                  У нас есть шоурумы в Москве и Санкт-Петербурге, где мы всегда
+                  рады видеть вас. Дать профессиональную консультацию и
+                  поделиться экспертизой
+                </div>
+                <button
+                  type="button"
+                  class="testdrive__button testdrive__button--color button__modal"
+                >
+                  Запись на тест-драйв
+                </button>
+              </div>
+              <div class="testdrive__img2">
+                <img loading="lazy" src="img/testdrive/foto.png" alt="" />
+              </div>
+              <div class="testdrive__img2-mobile">
+                <img loading="lazy" src="img/testdrive/foto2.png" alt="" />
+              </div>
+              <!-- <div id="image"></div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="facts">
+        <div class="container">
+          <h2 class="title title__document">
+            10 удивительных фактов про МЕТТА
+          </h2>
+          <div class="facts__description facts__description--color">
+            Кресла Samurai - продукция компании МЕТТА, ведущего производителя
+            офисных кресел и стульев в России и странах СНГ. Компания МЕТТА еще
+            более удивительна, чем ее кресла:
+          </div>
+          <div class="facts__items">
+            <div class="facts__item facts__item--style">
+              <div class="facts__question">
+                <div class="facts__var">
+                  <div class="facts__number facts__number--style">01</div>
+                  <div class="facts__text">
+                    МЕТТА заставляет расстаться с привычкой,
+                  </div>
+                </div>
+                <div class="facts__open facts__open--style">
+                  <img src="img/facts/plus.svg" class="facts__plus" alt="" />
+                  <img src="img/facts/minus.svg" class="facts__minus" alt="" />
+                </div>
+              </div>
+              <div class="facts__answer facts__answer--color">
+                Столько различных модификаций кресел можно скомпоновать, если
+                перебирать все возможные сочетания комплектующих. Но в каталог
+                МЕТТА входят около тысячи наиболее востребованных моделей.
+              </div>
+            </div>
+            <div class="facts__item facts__item--style">
+              <div class="facts__question">
+                <div class="facts__var">
+                  <div class="facts__number facts__number--style">02</div>
+                  <div class="facts__text">Миллион вариантов</div>
+                </div>
+                <div class="facts__open facts__open--style">
+                  <img
+                    loading="lazy"
+                    src="img/facts/plus.svg"
+                    class="facts__plus"
+                    alt=""
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/facts/minus.svg"
+                    class="facts__minus"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="facts__answer facts__answer--color">
+                Столько различных модификаций кресел можно скомпоновать, если
+                перебирать все возможные сочетания комплектующих. Но в каталог
+                МЕТТА входят около тысячи наиболее востребованных моделей.
+              </div>
+            </div>
+            <div class="facts__item facts__item--style">
+              <div class="facts__question">
+                <div class="facts__var">
+                  <div class="facts__number facts__number--style">03</div>
+                  <div class="facts__text">Полный производственный цикл</div>
+                </div>
+                <div class="facts__open facts__open--style">
+                  <img
+                    loading="lazy"
+                    src="img/facts/plus.svg"
+                    class="facts__plus"
+                    alt=""
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/facts/minus.svg"
+                    class="facts__minus"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="facts__answer facts__answer--color">
+                Столько различных модификаций кресел можно скомпоновать, если
+                перебирать все возможные сочетания комплектующих. Но в каталог
+                МЕТТА входят около тысячи наиболее востребованных моделей.
+              </div>
+            </div>
+            <div class="facts__item facts__item--style">
+              <div class="facts__question">
+                <div class="facts__var">
+                  <div class="facts__number facts__number--style">04</div>
+                  <div class="facts__text">Японские инженеры</div>
+                </div>
+                <div class="facts__open facts__open--style">
+                  <img
+                    loading="lazy"
+                    src="img/facts/plus.svg"
+                    class="facts__plus"
+                    alt=""
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/facts/minus.svg"
+                    class="facts__minus"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="facts__answer facts__answer--color">
+                Столько различных модификаций кресел можно скомпоновать, если
+                перебирать все возможные сочетания комплектующих. Но в каталог
+                МЕТТА входят около тысячи наиболее востребованных моделей.
+              </div>
+            </div>
+            <div class="facts__item facts__item--style">
+              <div class="facts__question">
+                <div class="facts__var">
+                  <div class="facts__number facts__number--style">05</div>
+                  <div class="facts__text">
+                    Швейцарская Swiss Approval International
+                  </div>
+                </div>
+                <div class="facts__open facts__open--style">
+                  <img
+                    loading="lazy"
+                    src="img/facts/plus.svg"
+                    class="facts__plus"
+                    alt=""
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/facts/minus.svg"
+                    class="facts__minus"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="facts__answer facts__answer--color">
+                Столько различных модификаций кресел можно скомпоновать, если
+                перебирать все возможные сочетания комплектующих. Но в каталог
+                МЕТТА входят около тысячи наиболее востребованных моделей.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="container">
+          <div class="clients__title">Наши клиенты</div>
+          <div class="clients__wrap">
+            <div class="clients__img">
+              <img loading="lazy" src="img/clients/clients1.png" alt="" />
+            </div>
+            <div class="clients__img">
+              <img loading="lazy" src="img/clients/clients2-mobile.png" alt="" />
+            </div>
+            <div class="clients__img">
+              <img loading="lazy" src="img/clients/clients3.png" alt="" />
+            </div>
+            <div class="clients__img">
+              <img loading="lazy" src="img/clients/clients4.png" alt="" />
+            </div>
+            <div class="clients__img">
+              <img loading="lazy" src="img/clients/clients5.png" alt="" />
+            </div>
+            <div class="clients__img">
+              <img loading="lazy" src="img/clients/clients6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form form--position">
+        <div class="form__wrapper form__wrapper--style">
+          <div class="container">
+            <h3 class="form__header">У вас остались вопросы?</h3>
+            <div class="form__description">
+              Оставьте контакты. Наш менеджер свяжется с вами и бесплатно
+              проконсультирует
+            </div>
+            <form action="#" method="POST" class="form__elements">
+              <div class="form__item">
+                <label for="name" class="form__label"
+                  ><input
+                    type="text"
+                    id="name"
+                    name="user-name"
+                    class="form__input form__input--style"
+                    placeholder="Ваше имя"
+                /></label>
+                <label for="telephone" class="form__label"
+                  ><input
+                    type="tel"
+                    id="telephone"
+                    name="user-phone"
+                    class="form__input form__input--style"
+                    placeholder="Телефон для связи"
+                /></label>
+                <button
+                  type="submit"
+                  class="button form__button form__button--style"
+                >
+                  Заказать звонок
+                </button>
+              </div>
+              <div class="form__item">
+                <input type="checkbox" class="form__checkbox" id="check" />
+                <label class="form__text form__text--color" for="check">
+                  <span>Даю свое согласие на обработку личных данных</span>
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="form__decoration">
+            <img loading="lazy" src="img/form/form-hand.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="map">
+      <div id="map-element" class="map__element">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=31dea845-f6d4-4247-980f-01dd232eb58b&lang=ru_RU"></script>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__col1">
+            <a href="#" class="footer__logo">
+              <!-- <div class="footer__logo-img"> -->
+              <img loading="lazy" src="img/footer/logo2.png" alt="" />
+              <!-- </div> -->
+            </a>
+            <ul class="footer__copy">
+              <li>Политика конфиденциальности</li>
+              <li>© 2021 Все права защищены</li>
+            </ul>
+          </div>
+          <div class="footer__col2">
+            <ul class="footer__list--style">
+              <li>
+                <a class="footer__item" href="#">О продукте</a>
+              </li>
+              <li>
+                <a class="footer__item" href="#">Отзывы</a>
+              </li>
+              <li>
+                <a class="footer__item" href="#">Доставка и оплата</a>
+              </li>
+              <li>
+                <a class="footer__item" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col3">
+            <div class="header-tel header-tel__wrap footer__tel-wrap">
+              <div class="header-tel__img footer__tel-img">
+                <img loading="lazy" src="img/footer/phone.svg" alt="" />
+              </div>
+              <a
+                href="tel:+74952210675"
+                class="header-tel__text header-tel__text--color footer__tel-text"
+                >+7 495 221-06-75</a
+              >
+            </div>
+            <div class="footer__messagi">
+              <div class="footer__messagi-img">
+                <img loading="lazy" src="img/footer/Message.svg" alt="" />
+              </div>
+              <a href="zakaz@kresla-samurai.ru" class="footer-messagi__text"
+                >zakaz@kresla-samurai.ru</a
+              >
+            </div>
+            <div class="footer__address">
+              <div class="footer__address-img">
+                <img loading="lazy" src="img/footer/Placeholder 2.svg" alt="" />
+              </div>
+              <a href="#" class="footer__address-text"
+                >ул. Красного курсанта д.25, лит.в, оф. 114, бизнес-центр "RED
+                CADET"</a
+              >
+            </div>
+          </div>
+        </a>
+        <ul class="footer__copy-mobile">
+          <li>Политика конфиденциальности</li>
+          <li>© 2021 Все права защищены</li>
+        </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal--style">
+      <div class="modal__inner modal__inner--style">
+        <div class="modal__done">
+          <img loading="lazy" src="img/modal/done.svg" alt="" />
+        </div>
+        <div class="modal__text">
+          <div class="modal__header">Ваша заявка принята</div>
+          <div class="modal__diskription modal__diskription--color">
+            В ближайшее время наш менеджер свяжется с Вами
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
